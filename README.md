@@ -37,3 +37,7 @@ Using this software is against the ToS of the game. You can get banned, use this
 This bot is entirely based on [PokemonGo Map](https://github.com/AHAAAAAAA/PokemonGo-Map/)
 
 
+[Try the bot](https://www.facebook.com/wherethefckismypokemon/) -> I would still need to add you to the tester list, but just shoot the bot a message and I'll be notified.
+
+[Youtube demo](https://www.youtube.com/watch?v=bMy2DJwmldA)
+
