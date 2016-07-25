@@ -25,6 +25,8 @@ You should be good to go!
 
 You will need to add people as 'testers' in the developer page under roles in order to use the bot. 
 
+To generate a set of lat-lng to address mapping, uw_ locations.json needs to be edited, we got ours from our school's API. Geolocator code is included you just need to comment and uncomment the location_pokemon with the one you would like to use. We find Geolocator to be a little inaccurate and we sometimes run into request quota limit issues.
+
 ## Warnings
 
 Using this software is against the ToS of the game. You can get banned, use this tool at your own risk.
