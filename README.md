@@ -1,26 +1,29 @@
-# PokemonGo Map ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/PoGoMapDev)
+# PokemonGo Facebook Bot ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)
 
 
-Live visualization of all the pokemon (with option to show gyms and pokestops) in your area. This is a proof of concept that we can load all the pokemon visible nearby given a location. Currently runs on a Flask server displaying a Google Maps with markers on it.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://github.com/AHAAAAAAA/PokemonGo-Map/wiki/Heroku-Deployment)
-
-
-#[Official Twitter] (https://twitter.com/PoGoMDev) Please give us a follow or contact us here.
-#[Official Website] (https://jz6.github.io/PoGoMap/)#
-
-![Map](https://i.imgur.com/ZjB9lo0.jpg)
+This bot builds on top of [PokemonGo Map](https://jz6.github.io/PoGoMap/) to provide mobile or desktop users an easy way to get a list of nearby pokemon (at a fixed location defined by the PokemonGo Map) by simply messaging the Facebook bot.
 
 
 ## How to setup
 
-For instructions on how to setup and run the tool, please refer to the project [wiki](https://github.com/AHAAAAAAA/PokemonGo-Map/wiki), or the [video guide](https://www.youtube.com/watch?v=RJKAulPCkRI).
+Follow [PokemonGo Wiki](https://github.com/AHAAAAAAA/PokemonGo-Map/wiki) to setup the initial map. 
 
+Simply create a new [facebook page](https://www.facebook.com/pages/create/?ref_type=bookmark), then add a new app in [Facebook Dev](https://developers.facebook.com/apps/).
 
-## Android Version
+Generate a new token in ![map](http://puu.sh/qejVW/230c0f46b5.png) 
+And paste the token in bot.py as 'PAGE_ACCESS_TOKEN'
 
-There is an [Android port](https://github.com/omkarmoghe/Pokemap) in the works. All Android related prs and issues please refer to this [repo](https://github.com/omkarmoghe/Pokemap).
+Set API_ URL in bot.py as the address to the PokemonGo Map /raw_data, e.g. if the url to the pokemongo map is abcdefg.ngrok.io, the API_ URL should be 'http://abcdefg.ngrok.io/raw_data'
 
+Then simply run bot.py.
+
+Tunnel port 80 using ngrok or equivalent tools, if port 80 has been used please modify 'port=80' in the bottom of the code into some other values.
+
+Paste the tunneled url to ![map](http://puu.sh/qekAs/cb33647e8e.png), and add 'webhook' to the end. e.g. if the url of the tunnel is xxxx.ngrok.io, you should type in https://xxxx.ngrok.io/webhook
+
+You should be good to go!
+
+You will need to add people as 'testers' in the developer page under roles in order to use the bot. 
 
 ## Warnings
 
@@ -29,8 +32,6 @@ Using this software is against the ToS of the game. You can get banned, use this
 
 ## Contributions
 
-Please submit all pull requests to [develop](https://github.com/AHAAAAAAA/PokemonGo-Map/tree/develop) branch.
+This bot is entirely based on [PokemonGo Map](https://github.com/AHAAAAAAA/PokemonGo-Map/)
 
-Building off [Mila432](https://github.com/Mila432/Pokemon_Go_API)'s PokemonGo API, [tejado's additions](https://github.com/tejado/pokemongo-api-demo), [leegao's additions](https://github.com/leegao/pokemongo-api-demo/tree/simulation) and [Flask-GoogleMaps](https://github.com/rochacbruno/Flask-GoogleMaps).
 
-Bitcoin donations appreciated! **18ABe5rhZgLR6zdH27hDWp8DdTkWKJoKwo**
