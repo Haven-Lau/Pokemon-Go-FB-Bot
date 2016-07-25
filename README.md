@@ -3,6 +3,8 @@
 
 This bot builds on top of [PokemonGo Map](https://jz6.github.io/PoGoMap/) to provide mobile or desktop users an easy way to get a list of nearby pokemon (at a fixed location defined by the PokemonGo Map) by simply messaging the Facebook bot.
 
+## Disclaimers
+PLEASE DO NOTE THAT THIS BOT WAS MADE FOR FUN AND IS NOT MEANT TO BE SERIOUS, DO EXPECT SOME BUG AS IT WAS BUILT IN A COUPLE OF HOURS, AND PLEASE REPORT ANY BUGS YOU FIND!
 
 ## How to setup
 
